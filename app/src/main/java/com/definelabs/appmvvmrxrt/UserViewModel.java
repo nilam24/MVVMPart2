@@ -2,6 +2,10 @@ package com.definelabs.appmvvmrxrt;
 
 import android.content.Context;
 import android.databinding.BaseObservable;
+import android.databinding.BindingAdapter;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 public class UserViewModel extends BaseObservable {
 
@@ -16,12 +20,13 @@ public class UserViewModel extends BaseObservable {
         this.context = context;
     }
 
-    public void setUserImg(String img){
-        user.setImg(img);
+   @BindingAdapter("imageUrl")
+    public static void setUserImg(ImageView imageView,String url){
+       Glide.with(imageView.getContext()).load(url).into(imageView);
 
     }
     public String getUserImg(){
-        return user.getImg();
+        return user.getImg().toString();
     }
     public void setUserName(String userName){
         user.setUserName(userName);

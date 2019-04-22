@@ -41,7 +41,8 @@
         android:id="@+id/image"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/colorAccent"
+        tools:imageUrl="@{userViewModel.userImg}"
+        android:src="@drawable/ic_small_2"
         app:layout_constraintLeft_toLeftOf="@+id/guideline"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guideline2" />

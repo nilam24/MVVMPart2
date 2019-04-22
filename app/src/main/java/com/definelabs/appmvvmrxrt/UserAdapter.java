@@ -47,6 +47,7 @@ public class UserAdapter extends RecyclerView.Adapter<userViewHolder> {
         nam=(TextView)view.findViewById(R.id.tv_name);
         phon=(TextView)view.findViewById(R.id.tv_phone);
         email=(TextView)view.findViewById(R.id.tv_email);
+        img=(ImageView)view.findViewById(R.id.image);
 
     }
 }

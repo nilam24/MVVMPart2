@@ -1,7 +1,9 @@
 package com.definelabs.appmvvmrxrt;
 
+import android.graphics.Picture;
+
 public class User {
-    private String img;
+    public Picture img;
     private String userName;
     private String phoneNumber;
     private String emailId;
@@ -9,11 +11,11 @@ public class User {
     public User() {
     }
 
-    public String getImg() {
+    public Picture getImg() {
         return img;
     }
 
-    public void setImg(String img) {
+    public void setImg(Picture img) {
         this.img = img;
     }
 
